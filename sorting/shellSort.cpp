@@ -18,8 +18,9 @@ void optimisedShellSort(int* arr, int n){
         gap = gap * 3 + 1;   // Knuth sequence
     while(gap >= 1){
         for(int j = gap; j < n; j++){
-            for(int i = j - gap; i >= 0 && arr[i] > arr[i + gap]; i -= gap){
-                swap(arr[i], arr[i + gap]);
+            for(int i = j - gap; i >= 0 ; i -= gap){
+                if(arr[i] > arr[i + gap]) swap(arr[i], arr[i + gap]);
+                else break;
             }
         }
         gap /= 3;
