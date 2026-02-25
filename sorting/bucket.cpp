@@ -36,3 +36,10 @@ int main(){
     for(int i=0;i<n;i++) cout << arr[i] << " ";
     cout << endl;
 }
+
+/*
+    Basic Idea ->
+    1. Divide elements into multiple buckets (groups).
+    2. Sort each bucket individually.
+    3. Merge all buckets to get the final sorted array.
+*/
