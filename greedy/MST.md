@@ -8,3 +8,6 @@ Algorithms for MST - Prim's, Kruskal
 * Keep a propity-queue (min-heap) add weight, node and parent in it.
 * Keep a visited array.
 * Keep an ArrayList to store MST nodes and a sum variable to add weights.
+
+# Kruskal's algo
+* Sort all the edges according to weight.
